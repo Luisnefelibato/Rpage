@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente R - IA que revoluciona tu productividad</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-particle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+        <div class="floating-particle" style="top: 20%; right: 15%; animation-delay: 1s;"></div>
+        <div class="floating-particle" style="top: 60%; left: 5%; animation-delay: 2s;"></div>
+        <div class="floating-particle" style="top: 80%; right: 20%; animation-delay: 3s;"></div>
+        <div class="floating-particle" style="top: 40%; left: 80%; animation-delay: 4s;"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="relative z-50 p-4 lg:p-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="loguito.png" alt="Antares Innovate" class="h-8 w-8 lg:h-10 lg:w-10">
+                <span class="text-lg lg:text-xl font-bold">Antares Innovate</span>
+            </div>
+            <a href="#contact" class="text-sm lg:text-base text-blue-300 hover:text-white transition-colors">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-padding relative">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                <!-- Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="hero-title gradient-text mb-6 fade-in-up">
+                        Asistente R: la <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">inteligencia artificial</span> que revoluciona tu productividad
+                    </h1>
+                    <p class="hero-subtitle text-gray-300 mb-8 fade-in-up animate-delay-1">
+                        Convierte WhatsApp en tu mejor aliado para automatizar, ahorrar tiempo y llevar tu empresa al siguiente nivel.
+                    </p>
+                    <a href="#demo" class="cta-button fade-in-up animate-delay-2">
+                        Pruébalo Tú Mismo
+                    </a>
+                </div>
+
+                <!-- WhatsApp Mockup -->
+                <div class="flex justify-center fade-in-up animate-delay-3">
+                    <div class="whatsapp-container w-full max-w-sm lg:max-w-md">
+                        <div class="whatsapp-header">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white">Asistente R</h3>
+                                <p class="text-xs text-gray-400">en línea</p>
+                            </div>
+                        </div>
+                        <div class="message-container" id="messageContainer">
+                            <!-- Messages will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section-padding scroll-animate">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center mb-16">
+                Beneficios que <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">transforman</span> tu negocio
+            </h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card scroll-animate">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calculator text-blue-400 text-2xl mr-4"></i>
+                        <h3 class="benefit-title text-white">Conciliación Automática</h3>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        Olvídate de las horas perdidas revisando transacciones. Con Asistente R, tus conciliaciones se realizan en minutos, con precisión absoluta y alertas inmediatas ante cualquier discrepancia.
+                    </p>
+                </div>
+
+                <div class="benefit-card scroll-animate animate-delay-1">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calendar-check text-blue-400 text-2xl mr-4"></i>
+                        <h3 class="benefit-title text-white">Gestión Inteligente de Visitas</h3>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        Organiza, agenda y supervisa cada visita comercial sin esfuerzo. Tu equipo se concentra en vender, mientras el Asistente R garantiza que ningún cliente quede sin atención.
+                    </p>
+                </div>
+
+                <div class="benefit-card scroll-animate animate-delay-2">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tools text-blue-400 text-2xl mr-4"></i>
+                        <h3 class="benefit-title text-white">Coordinación de Arreglos Técnicos</h3>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        Automatiza el seguimiento de mantenimientos y reparaciones. Con notificaciones en tiempo real, tus clientes reciben una experiencia impecable, y tu empresa proyecta eficiencia y confianza.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="section-padding scroll-animate">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center mb-4">
+                Resultados que <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">hablan por sí solos</span>
+            </h2>
+            <p class="text-xl text-gray-300 text-center mb-16">
+                Empresas que ya disfrutan del Asistente R reportan:
+            </p>
+            
+            <div class="metrics-grid">
+                <div class="metric-card scroll-animate">
+                    <div class="metric-number text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-2">95%</div>
+                    <p class="text-gray-300 text-sm lg:text-base">satisfacción del cliente gracias a respuestas inmediatas</p>
+                </div>
+
+                <div class="metric-card scroll-animate animate-delay-1">
+                    <div class="metric-number text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-2">80%</div>
+                    <p class="text-gray-300 text-sm lg:text-base">más eficiencia operativa en tareas repetitivas</p>
+                </div>
+
+                <div class="metric-card scroll-animate animate-delay-2">
+                    <div class="metric-number text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-2">+5K</div>
+                    <p class="text-gray-300 text-sm lg:text-base">procesos automatizados cada mes sin errores</p>
+                </div>
+
+                <div class="metric-card scroll-animate animate-delay-3">
+                    <div class="metric-number text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-2">90%</div>
+                    <p class="text-gray-300 text-sm lg:text-base">de resolución instantánea de consultas frecuentes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding scroll-animate">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center mb-16">
+                Lo que dicen nuestros <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">clientes</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <div class="glass-effect p-6 lg:p-8 scroll-animate">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-quote-left text-blue-400 text-2xl mr-4"></i>
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-300 mb-4 italic">
+                        "El Asistente R redujo nuestro tiempo de conciliación de 2 horas a solo 15 minutos diarios."
+                    </p>
+                    <div class="text-blue-400 font-semibold">Director Financiero, Empresa Retail</div>
+                </div>
+
+                <div class="glass-effect p-6 lg:p-8 scroll-animate animate-delay-1">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-quote-left text-blue-400 text-2xl mr-4"></i>
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-300 mb-4 italic">
+                        "Automatizamos más de 200 visitas mensuales sin fallas. Increíble eficiencia."
+                    </p>
+                    <div class="text-blue-400 font-semibold">Gerente Comercial, Empresa Servicios</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="section-padding scroll-animate" id="demo">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center mb-8">
+                Ve el <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Asistente R</span> en acción
+            </h2>
+            <p class="text-xl text-gray-300 text-center mb-16">
+                Espacios listos para tus videos demostrativos y conversaciones reales con clientes
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Video Demo Placeholder -->
+                <div class="glass-effect p-8 text-center scroll-animate">
+                    <i class="fas fa-play-circle text-6xl text-blue-400 mb-6"></i>
+                    <h3 class="text-xl font-semibold mb-4">Video Demostrativo</h3>
+                    <p class="text-gray-300 mb-6">Aquí puedes insertar un video mostrando el Asistente R automatizando procesos reales</p>
+                    <div class="bg-gray-800 rounded-lg h-48 flex items-center justify-center">
+                        <span class="text-gray-500">Espacio para video demo</span>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Conversations Placeholder -->
+                <div class="glass-effect p-8 text-center scroll-animate animate-delay-1">
+                    <i class="fab fa-whatsapp text-6xl text-green-400 mb-6"></i>
+                    <h3 class="text-xl font-semibold mb-4">Conversaciones Reales</h3>
+                    <p class="text-gray-300 mb-6">Screenshots de conversaciones auténticas con clientes usando el Asistente R</p>
+                    <div class="bg-gray-800 rounded-lg h-48 flex items-center justify-center">
+                        <span class="text-gray-500">Espacio para conversaciones WhatsApp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding scroll-animate">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title mb-8">
+                El futuro <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">no espera</span>
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Asistente R es más que un software: es tu socio estratégico en la transformación digital. 
+                Convierte tu WhatsApp en una plataforma de productividad infinita y haz crecer tu negocio con menos esfuerzo y más resultados.
+            </p>
+            <a href="#contact" class="cta-button text-xl px-12 py-4">
+                🚀 Descubre hoy cómo Asistente R puede transformar tu empresa
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding" id="contact">
+        <div class="container mx-auto text-center">
+            <div class="glass-effect p-8 lg:p-12 max-w-2xl mx-auto">
+                <h2 class="text-2xl lg:text-3xl font-bold mb-6">¿Listo para transformar tu empresa?</h2>
+                <p class="text-gray-300 mb-8">
+                    Contacta con Antares Innovate y descubre cómo el Asistente R puede revolucionar tus procesos administrativos.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://www.antaresinnovate.com/es" target="_blank" class="cta-button">
+                        Visitar Antares Innovate
+                    </a>
+                    <a href="#demo" class="cta-button bg-transparent border border-blue-400 hover:bg-blue-400">
+                        Solicitar Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800">
+        <div class="container mx-auto text-center">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <img src="loguito.png" alt="Antares Innovate" class="h-6 w-6">
+                <span class="font-semibold">Antares Innovate</span>
+            </div>
+            <p class="text-gray-400 text-sm">
+                La Creatividad Mueve el Mundo; la Tecnología lo Acelera.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
