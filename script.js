@@ -549,3 +549,170 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// Enhanced Demo Button Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const demoButton = document.getElementById('demoButton');
+    
+    if (demoButton) {
+        demoButton.addEventListener('click', function() {
+            // Smooth scroll to demo section
+            const demoSection = document.getElementById('whatsapp-demo');
+            if (demoSection) {
+                demoSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+                
+                // Add click effect
+                this.style.transform = 'translateY(-1px) scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            }
+        });
+        
+        // Add particle burst on click
+        demoButton.addEventListener('click', function() {
+            const particles = this.querySelectorAll('.particle-demo');
+            particles.forEach((particle, index) => {
+                setTimeout(() => {
+                    particle.style.animation = 'demoParticleExplode 0.8s ease-out';
+                    setTimeout(() => {
+                        particle.style.animation = '';
+                    }, 800);
+                }, index * 100);
+            });
+        });
+    }
+});
+// Enhanced CTA Button Effects
+document.addEventListener('DOMContentLoaded', function() {
+    const ctaButton = document.getElementById('ctaMainButton');
+    
+    if (ctaButton) {
+        // Ripple effect on click
+        ctaButton.addEventListener('click', function(e) {
+            // Create ripple element
+            const ripple = document.createElement('div');
+            ripple.className = 'cta-button-ripple';
+            this.appendChild(ripple);
+            
+            // Remove ripple after animation
+            setTimeout(() => {
+                if (ripple.parentNode) {
+                    ripple.parentNode.removeChild(ripple);
+                }
+            }, 600);
+            
+            // Add loading state
+            this.classList.add('loading');
+            
+            // Smooth scroll to demo
+            setTimeout(() => {
+                const demoSection = document.getElementById('whatsapp-demo');
+                if (demoSection) {
+                    demoSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }
+                
+                // Remove loading and add success state
+                this.classList.remove('loading');
+                this.classList.add('cta-button-success');
+                
+                // Reset success state after 2 seconds
+                setTimeout(() => {
+                    this.classList.remove('cta-button-success');
+                }, 2000);
+            }, 800);
+        });
+        
+        // Particle burst on hover
+        let particleInterval;
+        
+        ctaButton.addEventListener('mouseenter', function() {
+            clearInterval(particleInterval);
+            particleInterval = setInterval(() => {
+                createCtaParticle(this);
+            }, 200);
+        });
+        
+        ctaButton.addEventListener('mouseleave', function() {
+            clearInterval(particleInterval);
+        });
+    }
+});
+
+// Create floating particles around CTA button
+function createCtaParticle(button) {
+    const particle = document.createElement('div');
+    particle.style.cssText = `
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: linear-gradient(45deg, #3B82F6, #10B981);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 1000;
+    `;
+    
+    const rect = button.getBoundingClientRect();
+    const x = rect.left + Math.random() * rect.width;
+    const y = rect.top + Math.random() * rect.height;
+    
+    particle.style.left = x + 'px';
+    particle.style.top = y + 'px';
+    
+    document.body.appendChild(particle);
+    
+    // Animate particle
+    const animation = particle.animate([
+        { 
+            transform: 'translate(0, 0) scale(0)', 
+            opacity: 0 
+        },
+        { 
+            transform: `translate(${(Math.random() - 0.5) * 100}px, ${(Math.random() - 0.5) * 100}px) scale(1)`, 
+            opacity: 1,
+            offset: 0.5
+        },
+        { 
+            transform: `translate(${(Math.random() - 0.5) * 200}px, ${(Math.random() - 0.5) * 200}px) scale(0)`, 
+            opacity: 0 
+        }
+    ], {
+        duration: 2000,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+    });
+    
+    animation.onfinish = () => {
+        if (particle.parentNode) {
+            document.body.removeChild(particle);
+        }
+    };
+}
+
+// Add magnetic effect to CTA button
+function addMagneticEffect() {
+    const ctaButton = document.getElementById('ctaMainButton');
+    if (!ctaButton) return;
+    
+    ctaButton.addEventListener('mousemove', function(e) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        
+        const moveX = x * 0.1;
+        const moveY = y * 0.1;
+        
+        this.style.transform = `translateY(-5px) scale(1.05) translate(${moveX}px, ${moveY}px)`;
+    });
+    
+    ctaButton.addEventListener('mouseleave', function() {
+        this.style.transform = '';
+    });
+}
+
+// Initialize magnetic effect
+document.addEventListener('DOMContentLoaded', addMagneticEffect);

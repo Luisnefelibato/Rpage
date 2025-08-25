@@ -17,12 +17,52 @@
         <div class="floating-particle" style="top: 40%; left: 80%; animation-delay: 4s;"></div>
     </div>
 
-    <!-- Header -->
-    <header class="relative z-50 p-4 lg:p-6">
+    <!-- Enhanced Header -->
+    <header class="header-enhanced relative z-50 p-4 lg:p-6">
         <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo Section -->
             <div class="flex items-center space-x-3">
-                <img src="loguito.png" alt="Antares Innovate" class="h-16 w-16 lg:h-24 lg:w-24">
-                <span class="text-lg lg:text-xl font-bold">Antares Innovate</span>
+                <div class="logo-container">
+                    <img src="loguito.png" alt="Antares Innovate" class="h-16 w-16 lg:h-24 lg:w-24">
+                    <div class="logo-glow"></div>
+                </div>
+                <div class="brand-info">
+                    <span class="brand-name text-lg lg:text-xl font-bold">Antares Innovate</span>
+                    <div class="brand-tagline">Transformación Digital IA</div>
+                </div>
+            </div>
+
+            <!-- Enhanced Demo Button -->
+            <div class="demo-button-container">
+                <button class="demo-button-enhanced" id="demoButton">
+                    <div class="button-content">
+                        <div class="button-icon">
+                            <i class="fas fa-play"></i>
+                            <div class="icon-ring"></div>
+                            <div class="icon-ring ring-2"></div>
+                        </div>
+                        <div class="button-text">
+                            <span class="main-text">Ver Demo</span>
+                            <span class="sub-text">Cierres Reales</span>
+                        </div>
+                        <div class="button-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="button-glow"></div>
+                    <div class="success-particles">
+                        <div class="particle-demo"></div>
+                        <div class="particle-demo"></div>
+                        <div class="particle-demo"></div>
+                        <div class="particle-demo"></div>
+                    </div>
+                </button>
+                
+                <!-- Live Indicator -->
+                <div class="live-indicator">
+                    <div class="live-dot"></div>
+                    <span class="live-text">LIVE</span>
+                </div>
             </div>
         </nav>
     </header>
@@ -39,204 +79,209 @@
                     <p class="hero-subtitle text-gray-300 mb-8 fade-in-up animate-delay-1">
                         Convierte WhatsApp en tu mejor aliado para automatizar, ahorrar tiempo y llevar tu empresa al siguiente nivel.
                     </p>
-                    <a href="#demo" class="cta-button fade-in-up animate-delay-2">
-                        Pruébalo Tú Mismo
-                    </a>
+                    <!-- Reemplaza el botón existente con esto: -->
+<div class="cta-button-container fade-in-up animate-delay-2">
+    <a href="#whatsapp-demo" class="cta-button" id="ctaMainButton">
+        <div class="cta-button-glow"></div>
+        <span class="cta-button-text">Pruébalo Tú Mismo</span>
+    </a>
+</div>
+
                 </div>
 
                 <!-- WhatsApp Mockup with Enhanced Robot Animation -->
-<div class="flex justify-center fade-in-up animate-delay-3">
-    <div class="whatsapp-simulation-container">
-        <!-- Enhanced Robot Animation -->
-        <div class="robot-intro" id="robotIntro">
-            <div class="robot-scene">
-                <!-- Floating particles around robot -->
-                <div class="robot-particles">
-                    <div class="particle particle-1"></div>
-                    <div class="particle particle-2"></div>
-                    <div class="particle particle-3"></div>
-                    <div class="particle particle-4"></div>
-                    <div class="particle particle-5"></div>
-                    <div class="particle particle-6"></div>
-                </div>
-                
-                <!-- Robot Container -->
-                <div class="robot-container">
-                    <div class="robot-glow"></div>
-                    <div class="robot-body">
-                        <!-- Robot Head -->
-                        <div class="robot-head">
-                            <div class="robot-antenna">
-                                <div class="antenna-tip"></div>
-                            </div>
-                            <div class="robot-face">
-                                <div class="robot-eye left">
-                                    <div class="eye-pupil"></div>
-                                    <div class="eye-shine"></div>
+                <div class="flex justify-center fade-in-up animate-delay-3" id="whatsapp-demo">
+                    <div class="whatsapp-simulation-container">
+                        <!-- Enhanced Robot Animation -->
+                        <div class="robot-intro" id="robotIntro">
+                            <div class="robot-scene">
+                                <!-- Floating particles around robot -->
+                                <div class="robot-particles">
+                                    <div class="particle particle-1"></div>
+                                    <div class="particle particle-2"></div>
+                                    <div class="particle particle-3"></div>
+                                    <div class="particle particle-4"></div>
+                                    <div class="particle particle-5"></div>
+                                    <div class="particle particle-6"></div>
                                 </div>
-                                <div class="robot-eye right">
-                                    <div class="eye-pupil"></div>
-                                    <div class="eye-shine"></div>
+                                
+                                <!-- Robot Container -->
+                                <div class="robot-container">
+                                    <div class="robot-glow"></div>
+                                    <div class="robot-body">
+                                        <!-- Robot Head -->
+                                        <div class="robot-head">
+                                            <div class="robot-antenna">
+                                                <div class="antenna-tip"></div>
+                                            </div>
+                                            <div class="robot-face">
+                                                <div class="robot-eye left">
+                                                    <div class="eye-pupil"></div>
+                                                    <div class="eye-shine"></div>
+                                                </div>
+                                                <div class="robot-eye right">
+                                                    <div class="eye-pupil"></div>
+                                                    <div class="eye-shine"></div>
+                                                </div>
+                                                <div class="robot-mouth">
+                                                    <div class="mouth-inner"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Robot Torso -->
+                                        <div class="robot-torso">
+                                            <div class="robot-screen">
+                                                <div class="screen-content">
+                                                    <div class="screen-line"></div>
+                                                    <div class="screen-line"></div>
+                                                    <div class="screen-line"></div>
+                                                </div>
+                                            </div>
+                                            <div class="robot-button btn-1"></div>
+                                            <div class="robot-button btn-2"></div>
+                                            <div class="robot-button btn-3"></div>
+                                        </div>
+                                        
+                                        <!-- Robot Arms -->
+                                        <div class="robot-arm left-arm">
+                                            <div class="arm-upper"></div>
+                                            <div class="arm-lower"></div>
+                                            <div class="robot-hand">
+                                                <div class="hand-thumb"></div>
+                                            </div>
+                                        </div>
+                                        <div class="robot-arm right-arm">
+                                            <div class="arm-upper"></div>
+                                            <div class="arm-lower"></div>
+                                            <div class="robot-hand">
+                                                <div class="hand-thumb"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Speech Bubble with Animation -->
+                                    <div class="robot-speech-bubble">
+                                        <div class="bubble-content">
+                                            <span class="robot-text">¡Hey!</span>
+                                            <div class="text-cursor"></div>
+                                        </div>
+                                        <div class="bubble-tail"></div>
+                                    </div>
                                 </div>
-                                <div class="robot-mouth">
-                                    <div class="mouth-inner"></div>
+                                
+                                <!-- WhatsApp Logo with Effects -->
+                                <div class="whatsapp-logo-container">
+                                    <div class="whatsapp-glow"></div>
+                                    <div class="whatsapp-logo-float">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <div class="logo-rings">
+                                            <div class="ring ring-1"></div>
+                                            <div class="ring ring-2"></div>
+                                            <div class="ring ring-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Connection Line -->
+                                <div class="connection-line">
+                                    <div class="line-segment"></div>
+                                    <div class="line-pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="intro-text">
+                                <h3>Mira cómo cierro negocios reales</h3>
+                                <p>Simulaciones de conversaciones exitosas</p>
+                                <div class="intro-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">95%</span>
+                                        <span class="stat-label">Tasa de cierre</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">$2M+</span>
+                                        <span class="stat-label">Negocios cerrados</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Robot Torso -->
-                        <div class="robot-torso">
-                            <div class="robot-screen">
-                                <div class="screen-content">
-                                    <div class="screen-line"></div>
-                                    <div class="screen-line"></div>
-                                    <div class="screen-line"></div>
-                                </div>
-                            </div>
-                            <div class="robot-button btn-1"></div>
-                            <div class="robot-button btn-2"></div>
-                            <div class="robot-button btn-3"></div>
-                        </div>
-                        
-                        <!-- Robot Arms -->
-                        <div class="robot-arm left-arm">
-                            <div class="arm-upper"></div>
-                            <div class="arm-lower"></div>
-                            <div class="robot-hand">
-                                <div class="hand-thumb"></div>
-                            </div>
-                        </div>
-                        <div class="robot-arm right-arm">
-                            <div class="arm-upper"></div>
-                            <div class="arm-lower"></div>
-                            <div class="robot-hand">
-                                <div class="hand-thumb"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Speech Bubble with Animation -->
-                    <div class="robot-speech-bubble">
-                        <div class="bubble-content">
-                            <span class="robot-text">¡Hey!</span>
-                            <div class="text-cursor"></div>
-                        </div>
-                        <div class="bubble-tail"></div>
-                    </div>
-                </div>
-                
-                <!-- WhatsApp Logo with Effects -->
-                <div class="whatsapp-logo-container">
-                    <div class="whatsapp-glow"></div>
-                    <div class="whatsapp-logo-float">
-                        <i class="fab fa-whatsapp"></i>
-                        <div class="logo-rings">
-                            <div class="ring ring-1"></div>
-                            <div class="ring ring-2"></div>
-                            <div class="ring ring-3"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Connection Line -->
-                <div class="connection-line">
-                    <div class="line-segment"></div>
-                    <div class="line-pulse"></div>
-                </div>
-            </div>
-            
-            <div class="intro-text">
-                <h3>Mira cómo cierro negocios reales</h3>
-                <p>Simulaciones de conversaciones exitosas</p>
-                <div class="intro-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">95%</span>
-                        <span class="stat-label">Tasa de cierre</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">$2M+</span>
-                        <span class="stat-label">Negocios cerrados</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- WhatsApp Container -->
-        <div class="whatsapp-container w-full max-w-sm lg:max-w-md" id="whatsappContainer" style="display: none;">
-            <!-- WhatsApp Header -->
-            <div class="whatsapp-header">
-                <div class="header-left">
-                    <div class="profile-avatar">
-                        <div class="avatar-glow"></div>
-                        <i class="fas fa-robot text-white text-lg"></i>
-                        <div class="status-indicator"></div>
-                    </div>
-                </div>
-                <div class="flex-1">
-                    <div class="flex items-center">
-                        <h3 class="font-semibold text-white">Asistente R</h3>
-                        <div class="verified-badge">
-                            <i class="fas fa-check"></i>
-                        </div>
-                    </div>
-                    <p class="text-xs text-green-300 flex items-center">
-                        <div class="typing-dots-header">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                        <span class="typing-text">cerrando negocio...</span>
-                    </p>
-                </div>
-                <div class="scenario-counter" id="scenarioCounter">
-                    <div class="counter-content">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Deal 1/4</span>
-                    </div>
-                </div>
-            </div>
+                        <!-- WhatsApp Container -->
+                        <div class="whatsapp-container w-full max-w-sm lg:max-w-md" id="whatsappContainer" style="display: none;">
+                            <!-- WhatsApp Header -->
+                            <div class="whatsapp-header">
+                                <div class="header-left">
+                                    <div class="profile-avatar">
+                                        <div class="avatar-glow"></div>
+                                        <i class="fas fa-robot text-white text-lg"></i>
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center">
+                                        <h3 class="font-semibold text-white">Asistente R</h3>
+                                        <div class="verified-badge">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs text-green-300 flex items-center">
+                                        <div class="typing-dots-header">
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="typing-text">cerrando negocio...</span>
+                                    </p>
+                                </div>
+                                <div class="scenario-counter" id="scenarioCounter">
+                                    <div class="counter-content">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>Deal 1/4</span>
+                                    </div>
+                                </div>
+                            </div>
 
-            <!-- Messages Container -->
-            <div class="message-container" id="messageContainer">
-                <div class="simulation-header">
-                    <div class="simulation-badge">
-                        <div class="live-dot"></div>
-                        <i class="fas fa-broadcast-tower mr-2"></i>
-                        Simulación en Vivo
-                    </div>
-                </div>
-                <!-- Messages will be dynamically added here -->
-            </div>
+                            <!-- Messages Container -->
+                            <div class="message-container" id="messageContainer">
+                                <div class="simulation-header">
+                                    <div class="simulation-badge">
+                                        <div class="live-dot"></div>
+                                        <i class="fas fa-broadcast-tower mr-2"></i>
+                                        Simulación en Vivo
+                                    </div>
+                                </div>
+                                <!-- Messages will be dynamically added here -->
+                            </div>
 
-            <!-- Enhanced Simulation Controls -->
-            <div class="simulation-controls">
-                <div class="control-panel">
-                    <div class="control-left">
-                        <div class="status-light"></div>
-                        <span class="control-text">Observando negociación...</span>
-                    </div>
-                    <div class="control-right">
-                        <div class="signal-bars">
-                            <div class="bar bar-1"></div>
-                            <div class="bar bar-2"></div>
-                            <div class="bar bar-3"></div>
-                            <div class="bar bar-4"></div>
+                            <!-- Enhanced Simulation Controls -->
+                            <div class="simulation-controls">
+                                <div class="control-panel">
+                                    <div class="control-left">
+                                        <div class="status-light"></div>
+                                        <span class="control-text">Observando negociación...</span>
+                                    </div>
+                                    <div class="control-right">
+                                        <div class="signal-bars">
+                                            <div class="bar bar-1"></div>
+                                            <div class="bar bar-2"></div>
+                                            <div class="bar bar-3"></div>
+                                            <div class="bar bar-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" id="progressFill"></div>
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                    <div class="progress-text">
+                                        <span id="progressPercent">0%</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progressFill"></div>
-                        <div class="progress-glow"></div>
-                    </div>
-                    <div class="progress-text">
-                        <span id="progressPercent">0%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
             </div>
         </div>
     </section>
