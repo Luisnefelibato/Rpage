@@ -1,4 +1,11 @@
 // Enhanced Business Closing Simulations with Amazing Effects
+document.getElementById("demoButton").addEventListener("click", function() {
+    const demoSection = document.querySelector("#demo");
+    if (demoSection) {
+        demoSection.scrollIntoView({ behavior: "smooth" });
+    }
+});
+
 const businessConversations = [
     // Conversación 1: Cierre Software Empresarial
     {
